@@ -1,14 +1,22 @@
 import 'package:flutter/material.dart';
+<<<<<<< HEAD
 import 'package:flutter_news_app/helper/data.dart';
 
 import '../models/category_model.dart';
 
 class Home extends StatefulWidget {
+=======
+
+class Home extends StatefulWidget {
+
+
+>>>>>>> origin/main
   @override
   _HomeState createState() => _HomeState();
 }
 
 class _HomeState extends State<Home> {
+<<<<<<< HEAD
   List<CategoryModel> categories = [];
 
   @override
@@ -102,5 +110,19 @@ class CategoryTile extends StatelessWidget {
         ],
       ),
     );
+=======
+  @override
+  Widget build(BuildContext context) {
+    return Scaffold(
+        appBar: AppBar(
+          title: Row(
+            children: <Widget>
+            [Text("Flutter"),
+            Text("News",style: TextStyle(color: Colors.blue),)],
+          ),
+          elevation: 0.0,
+        ),    );
+
+>>>>>>> origin/main
   }
 }
